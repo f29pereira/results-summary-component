@@ -1,0 +1,58 @@
+/* 
+CSS Module for the Score component:
+- Renders the score result of 100, score type and description with score percentage
+*/
+
+/*score main container: only the bottom borders are rounded*/
+.mainCont {
+  padding: 2rem;
+  border-bottom-left-radius: var(--border-radius-30);
+  border-bottom-right-radius: var(--border-radius-30);
+  background: linear-gradient(
+    0deg,
+    var(--light-royal-blue) 10%,
+    var(--light-slate-blue) 100%
+  );
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-20);
+  color: var(--light-lavender);
+}
+
+/*Circle with the score of 100*/
+.circle {
+  width: 10rem; /*160px*/
+  height: 10rem; /*160px*/
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    var(--persian-blue) 0%,
+    var(--violet-blue) 100%
+  );
+}
+
+.scoreValue {
+  font-size: var(--font-size-60);
+  color: var(--white);
+}
+
+.type {
+  display: block;
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: var(--font-size-25);
+  color: var(--white);
+}
+
+/*of 100 text: has 0.5 opacity*/
+.scoreText {
+  color: var(--muted-white);
+}
+
+.description {
+  color: var(--light-lavender);
+}
+
+/*TO DO: Add tablet and desktop styles*/
