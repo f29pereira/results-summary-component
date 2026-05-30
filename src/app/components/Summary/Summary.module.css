@@ -49,6 +49,12 @@ CSS Module for the Summary component:
     padding: 1.2rem 0;
   }
 
+  /*continue link: override focus style*/
+  .link:focus-visible {
+    outline: solid 3px var(--light-slate-blue);
+    outline-offset: 3px;
+  }
+
   /*continue link: on hover, change the background color to gradient*/
   .link:hover {
     background: linear-gradient(
