@@ -13,14 +13,13 @@ export default function Summary() {
       <h2 className={styles.title}>Summary</h2>
 
       {/*Skills list*/}
-      {skillsList.map((skill, index) => (
-        <Skill
-          key={index}
-          color={skill.color}
-          name={skill.name}
-          score={skill.score}
-        />
-      ))}
+      <ul>
+        {skillsList.map((skill, index) => (
+          <li key={index} className={styles.skillItem}>
+            <Skill color={skill.color} name={skill.name} score={skill.score} />
+          </li>
+        ))}
+      </ul>
 
       {/*Continue link*/}
       <a href="#" className={styles.link}>

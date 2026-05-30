@@ -5,12 +5,17 @@ CSS Module for the Summary component:
 
 .mainCont {
   padding: 2rem;
+  background-color: var(--white);
 }
 
 .title {
   margin-bottom: 1.5rem;
   color: var(--dark-gray-blue);
   font-size: var(--font-size-20);
+}
+
+.skillItem {
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -29,17 +34,22 @@ CSS Module for the Summary component:
 
 /*Tablet Styles*/
 @media (min-width: 48rem /*768px*/) {
-  /*increase the font size for the title*/
+  /*main title: increase the font size*/
   .title {
     font-size: var(--font-size-25);
   }
 
-  /*increase top/bottom padding for the link*/
+  /*skill: increase the bottom margin*/
+  .skillItem {
+    margin-bottom: 1.5rem;
+  }
+
+  /*continue link: increase top/bottom padding*/
   .link {
     padding: 1.2rem 0;
   }
 
-  /*on hover, change the link background to gradient*/
+  /*continue link: on hover, change the background color to gradient*/
   .link:hover {
     background: linear-gradient(
       0deg,
@@ -49,4 +59,13 @@ CSS Module for the Summary component:
   }
 }
 
-/*TO DO: Add desktop styles*/
+/*Desktop Styles*/
+@media (min-width: 64rem /*1024px*/) {
+  /*summary main container: increase padding and make top/bottom right borders rounded*/
+  .mainCont {
+    padding: 3rem 3rem 3rem 0;
+    background-color: var(--white);
+    border-bottom-right-radius: var(--border-radius-30);
+    border-top-right-radius: var(--border-radius-30);
+  }
+}
