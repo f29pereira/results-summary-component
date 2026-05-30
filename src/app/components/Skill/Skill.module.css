@@ -10,7 +10,6 @@ Renders a skill banner with:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   padding: 1.2rem 1rem;
   border-radius: var(--border-radius-10);
 }
@@ -73,22 +72,34 @@ Renders a skill banner with:
 
 /*Tablet Styles*/
 @media (min-width: 48rem /*768px*/) {
-  /*increase the bottom margin and padding for the main container*/
+  /*skill main container: increase the padding*/
   .mainCont {
-    margin-bottom: 1.5rem;
     padding: 1.5rem;
   }
 
-  /*increase the icon size*/
+  /*skill icon: increase the size*/
   .icon {
     width: 1.875rem; /*30px*/
     height: 1.875rem; /*30px*/
   }
 
+  /*score and of 100 text: increase the font size*/
   .score,
   .scoreText {
     font-size: var(--font-size-18);
   }
 }
 
-/*TO DO: Add desktop styles*/
+/*Desktop Styles*/
+@media (min-width: 64rem /*1024px*/) {
+  /*skill main container: descrease the padding*/
+  .mainCont {
+    padding: 1rem;
+  }
+
+  /*skill icon: reset the size*/
+  .icon {
+    width: 1.5625rem; /*25px*/
+    height: 1.5625rem; /*25px*/
+  }
+}
