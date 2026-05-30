@@ -5,7 +5,7 @@ CSS Module for the Score component:
 
 /*score main container: only the bottom borders are rounded*/
 .mainCont {
-  padding: 2rem;
+  padding: 2rem 2rem 2.5rem 2rem;
   border-bottom-left-radius: var(--border-radius-30);
   border-bottom-right-radius: var(--border-radius-30);
   background: linear-gradient(
@@ -52,7 +52,43 @@ CSS Module for the Score component:
 }
 
 .description {
+  display: inline-block;
   color: var(--light-lavender);
 }
 
-/*TO DO: Add tablet and desktop styles*/
+/*Tablet Styles*/
+@media (min-width: 48rem /*768px*/) {
+  /*increase the font size for the title*/
+  .title {
+    font-size: var(--font-size-25);
+  }
+
+  /*increase the circle size*/
+  .circle {
+    width: 12.5rem; /*200px*/
+    height: 12.5rem; /*200px*/
+  }
+
+  /*increase the font size for the score value*/
+  .scoreValue {
+    font-size: var(--font-size-75);
+  }
+
+  /*increase the font size for the score text*/
+  .scoreText {
+    font-size: var(--font-size-18);
+  }
+
+  /*increase margin top/bottom and font size for the score type*/
+  .type {
+    margin: 2rem 0 1rem 0;
+    font-size: var(--font-size-30);
+  }
+
+  /*set max width for the description*/
+  .description {
+    max-width: 18.75rem; /*300px*/
+  }
+}
+
+/*TO DO: Add desktop styles*/
