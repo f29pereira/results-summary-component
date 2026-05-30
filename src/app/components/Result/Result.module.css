@@ -1,0 +1,25 @@
+/* 
+CSS Module for the Result component:
+- Renders the score and summary
+*/
+
+/*Desktop Styles*/
+@media (min-width: 64rem /*1024px*/) {
+  .sectionCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--pale-blue);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 3rem;
+    max-width: 55rem; /*880px*/
+    border-radius: var(--border-radius-30);
+    background-color: var(--white);
+  }
+}
