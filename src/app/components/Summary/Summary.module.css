@@ -1,0 +1,52 @@
+/* 
+CSS Module for the Summary component:
+- Renders the skills summary and continue link
+*/
+
+.mainCont {
+  padding: 2rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray-blue);
+  font-size: var(--font-size-20);
+}
+
+.link {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-radius: var(--border-radius-500);
+  background-color: var(--dark-gray-blue);
+}
+
+.linkText {
+  font-size: var(--font-size-18);
+  color: var(--white);
+}
+
+/*Tablet Styles*/
+@media (min-width: 48rem /*768px*/) {
+  /*increase the font size for the title*/
+  .title {
+    font-size: var(--font-size-25);
+  }
+
+  /*increase top/bottom padding for the link*/
+  .link {
+    padding: 1.2rem 0;
+  }
+
+  /*on hover, change the link background to gradient*/
+  .link:hover {
+    background: linear-gradient(
+      0deg,
+      var(--light-royal-blue) 0%,
+      var(--light-slate-blue) 100%
+    );
+  }
+}
+
+/*TO DO: Add desktop styles*/
