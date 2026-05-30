@@ -17,6 +17,7 @@ Renders a skill banner with:
 
 .iconNameCont {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -69,3 +70,25 @@ Renders a skill banner with:
 .scoreText {
   color: var(--pale-dark-gray-blue);
 }
+
+/*Tablet Styles*/
+@media (min-width: 48rem /*768px*/) {
+  /*increase the bottom margin and padding for the main container*/
+  .mainCont {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  /*increase the icon size*/
+  .icon {
+    width: 1.875rem; /*30px*/
+    height: 1.875rem; /*30px*/
+  }
+
+  .score,
+  .scoreText {
+    font-size: var(--font-size-18);
+  }
+}
+
+/*TO DO: Add desktop styles*/
