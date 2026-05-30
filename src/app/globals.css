@@ -16,8 +16,8 @@ Global CSS styles
   --font-weight-500: 500;
   --font-weight-700: 700;
   /*Size*/
-  --font-size-18: 1.125rem; /*18px*/
   --font-size-base: 1rem;
+  --font-size-18: 1.125rem; /*18px*/
   --font-size-20: 1.25rem; /*20px*/
   --font-size-25: 1.5625rem; /*25px*/
   --font-size-60: 3.75rem; /*60px*/
@@ -35,12 +35,18 @@ Global CSS styles
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
+  --pale-dark-gray-blue: hsla(224, 30%, 27%, 0.5);
 
   /*Primary*/
   --light-red: hsl(0, 100%, 67%);
   --orange-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobatl-blue: hsl(234, 85%, 45%);
+
+  --pale-light-red: hsl(0, 100%, 67%, 0.1);
+  --pale-orange-yellow: hsl(39, 100%, 56%, 0.1);
+  --pale-green-teal: hsl(166, 100%, 37%, 0.1);
+  --pale-cobatl-blue: hsl(234, 85%, 45%, 0.1);
 
   /*Gradients*/
   /*Background*/

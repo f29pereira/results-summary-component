@@ -1,0 +1,71 @@
+/* 
+CSS Module for the Skill component:
+Renders a skill banner with:
+- Icon
+- Name
+- Value of 100
+*/
+
+.mainCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1rem;
+  border-radius: var(--border-radius-10);
+}
+
+.iconNameCont {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 1.5625rem; /*25px*/
+  height: 1.5625rem; /*25px*/
+  stroke: currentColor;
+}
+
+.dangerBg {
+  background-color: var(--pale-light-red);
+}
+
+.dangerText {
+  color: var(--light-red);
+}
+
+.warningBg {
+  background-color: var(--pale-orange-yellow);
+}
+
+.warningText {
+  color: var(--orange-yellow);
+}
+
+.successBg {
+  background-color: var(--pale-green-teal);
+}
+
+.successText {
+  color: var(--green-teal);
+}
+
+.infoBg {
+  background-color: var(--pale-cobatl-blue);
+}
+
+.infoText {
+  color: var(--cobatl-blue);
+}
+
+.name {
+  font-size: var(--font-size-18);
+}
+
+.score {
+  color: var(--dark-gray-blue);
+}
+
+.scoreText {
+  color: var(--pale-dark-gray-blue);
+}
