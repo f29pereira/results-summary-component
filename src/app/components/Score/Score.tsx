@@ -13,9 +13,16 @@ export default function Score({ score, type, percentage }: ScoreProps) {
 
       {/*Score of 100*/}
       <div className={`flex-center`}>
-        <div className={`flex-col-center ${styles.circle}`}>
-          <span className={`bold-text ${styles.scoreValue}`}>{score}</span>
-          <span className={`light-text ${styles.scoreText}`}>of 100</span>
+        <div
+          className={`flex-col-center ${styles.circle}`}
+          aria-label={`You scored ${score} of 100`}
+        >
+          <span className={`bold-text ${styles.scoreValue}`} aria-hidden="true">
+            {score}
+          </span>
+          <span className={`light-text ${styles.scoreText}`} aria-hidden="true">
+            of 100
+          </span>
         </div>
       </div>
 

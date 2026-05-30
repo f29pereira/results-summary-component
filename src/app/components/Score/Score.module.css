@@ -58,37 +58,71 @@ CSS Module for the Score component:
 
 /*Tablet Styles*/
 @media (min-width: 48rem /*768px*/) {
-  /*increase the font size for the title*/
+  /*main title: increase the font size*/
   .title {
     font-size: var(--font-size-25);
   }
 
-  /*increase the circle size*/
+  /*score circle: increase the size*/
   .circle {
     width: 12.5rem; /*200px*/
     height: 12.5rem; /*200px*/
   }
 
-  /*increase the font size for the score value*/
+  /*score value: increase the font size*/
   .scoreValue {
     font-size: var(--font-size-75);
   }
 
-  /*increase the font size for the score text*/
+  /*score text: increase the font size*/
   .scoreText {
     font-size: var(--font-size-18);
   }
 
-  /*increase margin top/bottom and font size for the score type*/
+  /*score type: increase top/bottom margin and font size*/
   .type {
     margin: 2rem 0 1rem 0;
     font-size: var(--font-size-30);
   }
 
-  /*set max width for the description*/
+  /*score percentage description: set max width*/
   .description {
     max-width: 18.75rem; /*300px*/
   }
 }
 
-/*TO DO: Add desktop styles*/
+/*Desktop Styles*/
+@media (min-width: 64rem /*1024px*/) {
+  /*score main container: increase the padding and make all the borders rounded*/
+  .mainCont {
+    padding: 3rem 4rem 3rem 4rem;
+    border-top-left-radius: var(--border-radius-30);
+    border-top-right-radius: var(--border-radius-30);
+  }
+
+  /*score circle: increase the size*/
+  .circle {
+    width: 14.375rem; /*230px*/
+    height: 14.375rem; /*230px*/
+  }
+
+  /*score type: increase the font size*/
+  .type {
+    font-size: var(--font-size-35);
+  }
+
+  /*score percentage description: decrease the max width*/
+  .description {
+    max-width: 15.625rem; /*250px*/
+  }
+}
+
+/*Large Desktop Styles*/
+@media (min-width: 90rem /*1440px*/) {
+  /*score main container: increase the padding*/
+  .mainCont {
+    padding: 3rem 6rem 3rem 6rem;
+    border-top-left-radius: var(--border-radius-30);
+    border-top-right-radius: var(--border-radius-30);
+  }
+}
