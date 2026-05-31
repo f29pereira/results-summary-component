@@ -17,7 +17,11 @@ export default function Score({ score, type, percentage }: ScoreProps) {
           className={`flex-col-center ${styles.circle}`}
           aria-label={`You scored ${score} of 100`}
         >
-          <span className={`bold-text ${styles.scoreValue}`} aria-hidden="true">
+          <span
+            className={`bold-text ${styles.scoreValue}`}
+            aria-hidden="true"
+            data-testid="score"
+          >
             {score}
           </span>
           <span className={`light-text ${styles.scoreText}`} aria-hidden="true">
