@@ -3,6 +3,10 @@ CSS Module for the Result component:
 - Renders the score and summary
 */
 
+.sectionCont {
+  background-color: var(--white);
+}
+
 /*Desktop Styles*/
 @media (min-width: 64rem /*1024px*/) {
   .sectionCont {
