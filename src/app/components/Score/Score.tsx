@@ -15,6 +15,7 @@ export default function Score({ score, type, percentage }: ScoreProps) {
       <div className={`flex-center`}>
         <div
           className={`flex-col-center ${styles.circle}`}
+          role="img"
           aria-label={`You scored ${score} of 100`}
         >
           <span
