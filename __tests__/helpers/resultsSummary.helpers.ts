@@ -2,6 +2,8 @@ import { screen } from "@testing-library/react";
 import {
   MOCK_SCORE_PROPS,
   MOCK_SCORE_CONTENT,
+  MOCKS_SKILL_PROPS,
+  MOCK_SKILL_CONTENT,
 } from "../fixtures/resultsSummary.fixtures";
 
 /**
@@ -32,4 +34,27 @@ export const expectSummaryVisible = () => {
   expect(scoreText).toBeVisible();
   expect(type).toBeVisible();
   expect(description).toBeVisible();
+};
+
+/**
+ * Expects the visibility of the following elements, in the Skill component:
+ * - icon
+ * - name
+ * - value of 100
+ */
+export const expectSkillVisible = () => {
+  const name = screen.getByText(MOCKS_SKILL_PROPS.name);
+
+  const icon = screen.getByTestId("skill-icon");
+
+  const scoreContainer = screen.getByTestId("skill-score");
+  const scoreValue = MOCKS_SKILL_PROPS.score.toString();
+
+  const scoreText = screen.getByText(MOCK_SKILL_CONTENT.scoreText);
+
+  expect(name).toBeVisible();
+  expect(icon).toBeVisible();
+  expect(scoreContainer).toBeVisible();
+  expect(scoreContainer).toHaveTextContent(scoreValue);
+  expect(scoreText).toBeVisible();
 };

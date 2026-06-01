@@ -33,6 +33,7 @@ export const getSkillIcon = (type: BannerType) => {
           fill="none"
           viewBox="0 0 20 20"
           aria-hidden="true"
+          data-testid="skill-icon"
         >
           <path
             strokeLinecap="round"
@@ -49,6 +50,7 @@ export const getSkillIcon = (type: BannerType) => {
           fill="none"
           viewBox="0 0 20 20"
           aria-hidden="true"
+          data-testid="skill-icon"
         >
           <path
             strokeLinecap="round"
@@ -77,6 +79,7 @@ export const getSkillIcon = (type: BannerType) => {
           fill="none"
           viewBox="0 0 20 20"
           aria-hidden="true"
+          data-testid="skill-icon"
         >
           <path
             strokeLinecap="round"
@@ -93,6 +96,7 @@ export const getSkillIcon = (type: BannerType) => {
           fill="none"
           viewBox="0 0 20 20"
           aria-hidden="true"
+          data-testid="skill-icon"
         >
           <path
             strokeLinecap="round"

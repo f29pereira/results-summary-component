@@ -25,7 +25,7 @@ export default function Skill({ color, name, score }: SkillProps) {
       </div>
 
       {/*Value of 100*/}
-      <span className={`bold-text ${styles.score}`}>
+      <span className={`bold-text ${styles.score}`} data-testid="skill-score">
         {score}{" "}
         <span className={styles.scoreText} aria-hidden="true">
           / 100
