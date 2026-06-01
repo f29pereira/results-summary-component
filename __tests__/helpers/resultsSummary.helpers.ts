@@ -14,7 +14,7 @@ import {
  * - user score type
  * - description with user percentage
  */
-export const expectSummaryVisible = () => {
+export const expectScoreVisible = () => {
   const title = screen.getByRole("heading", {
     level: 1,
     name: MOCK_SCORE_CONTENT.title,
