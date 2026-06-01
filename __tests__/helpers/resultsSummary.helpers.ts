@@ -1,13 +1,14 @@
-import { screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import {
   MOCK_SCORE_PROPS,
   MOCK_SCORE_CONTENT,
   MOCKS_SKILL_PROPS,
   MOCK_SKILL_CONTENT,
+  MOCK_SUMMARY_CONTENT,
 } from "../fixtures/resultsSummary.fixtures";
 
 /**
- * Expects the visibility of the following elements, in the Result component:
+ * Expects the visibility of the following elements, in the Score component:
  * - main title
  * - user score
  * - of 100 text
@@ -57,4 +58,26 @@ export const expectSkillVisible = () => {
   expect(scoreContainer).toBeVisible();
   expect(scoreContainer).toHaveTextContent(scoreValue);
   expect(scoreText).toBeVisible();
+};
+
+/**
+ * Expects the visibility of the following elements, in the Summary component:
+ * - title
+ * - skills list
+ * - continue link
+ */
+export const expectSummaryVisible = () => {
+  const title = screen.getByRole("heading", {
+    level: 2,
+    name: MOCK_SUMMARY_CONTENT.title,
+  });
+
+  const list = screen.getByRole("list");
+  const skills = within(list).getAllByRole("listitem");
+
+  const link = screen.getByRole("link", { name: MOCK_SUMMARY_CONTENT.link });
+
+  expect(title).toBeVisible();
+  expect(skills).toHaveLength(4);
+  expect(link).toBeVisible();
 };

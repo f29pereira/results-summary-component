@@ -33,3 +33,11 @@ export const MOCKS_SKILL_PROPS: SkillProps = {
 export const MOCK_SKILL_CONTENT = {
   scoreText: "/ 100",
 };
+
+/**
+ * Summary component: page content mock
+ */
+export const MOCK_SUMMARY_CONTENT = {
+  title: "Summary",
+  link: "Continue",
+};
