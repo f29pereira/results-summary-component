@@ -7,11 +7,11 @@ import Summary from "../Summary/Summary";
  */
 export default function Result() {
   return (
-    <section className={styles.sectionCont}>
-      <div className={styles.grid}>
+    <main className={styles.sectionCont}>
+      <section className={styles.grid}>
         <Score score={76} type="Great" percentage={65} />
         <Summary />
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
