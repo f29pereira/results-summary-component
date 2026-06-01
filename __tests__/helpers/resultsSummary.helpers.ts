@@ -1,8 +1,8 @@
 import { screen } from "@testing-library/react";
 import {
-  SCORE_PROPS,
-  SCORE_CONTENT,
-} from "../constants/resultsSummary.constants";
+  MOCK_SCORE_PROPS,
+  MOCK_SCORE_CONTENT,
+} from "../fixtures/resultsSummary.fixtures";
 
 /**
  * Expects the visibility of the following elements, in the Result component:
@@ -15,16 +15,16 @@ import {
 export const expectSummaryVisible = () => {
   const title = screen.getByRole("heading", {
     level: 1,
-    name: SCORE_CONTENT.title,
+    name: MOCK_SCORE_CONTENT.title,
   });
 
   const scoreContainer = screen.getByTestId("score");
-  const scoreValue = SCORE_PROPS.score.toString();
-  const scoreText = screen.getByText(SCORE_CONTENT.scoreText);
+  const scoreValue = MOCK_SCORE_PROPS.score.toString();
+  const scoreText = screen.getByText(MOCK_SCORE_CONTENT.scoreText);
 
-  const type = screen.getByText(SCORE_PROPS.type);
+  const type = screen.getByText(MOCK_SCORE_PROPS.type);
 
-  const description = screen.getByText(SCORE_CONTENT.description);
+  const description = screen.getByText(MOCK_SCORE_CONTENT.description);
 
   expect(title).toBeVisible();
   expect(scoreContainer).toBeVisible();

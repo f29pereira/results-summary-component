@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import Score from "@/app/components/Score/Score";
-import { SCORE_PROPS } from "../../../constants/resultsSummary.constants";
+import { MOCK_SCORE_PROPS } from "../../../fixtures/resultsSummary.fixtures";
 import { expectSummaryVisible } from "../../../helpers/resultsSummary.helpers";
 
 /**
@@ -10,9 +10,9 @@ describe("Score component", () => {
   beforeEach(() => {
     render(
       <Score
-        score={SCORE_PROPS.score}
-        type={SCORE_PROPS.type}
-        percentage={SCORE_PROPS.percentage}
+        score={MOCK_SCORE_PROPS.score}
+        type={MOCK_SCORE_PROPS.type}
+        percentage={MOCK_SCORE_PROPS.percentage}
       />,
     );
   });
