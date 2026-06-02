@@ -34,6 +34,11 @@ CSS Module for the Summary component:
 
 /*Tablet Styles*/
 @media (min-width: 48rem /*768px*/) {
+  /*summary main container: increase padding*/
+  .mainCont {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+
   /*main title: increase the font size*/
   .title {
     font-size: var(--font-size-25);
@@ -67,7 +72,7 @@ CSS Module for the Summary component:
 
 /*Desktop Styles*/
 @media (min-width: 64rem /*1024px*/) {
-  /*summary main container: increase padding and make top/bottom right borders rounded*/
+  /*summary main container: decrease right padding and remove left padding, make top/bottom right borders rounded*/
   .mainCont {
     padding: 3rem 3rem 3rem 0;
     background-color: var(--white);
