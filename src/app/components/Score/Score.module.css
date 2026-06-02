@@ -1,0 +1,128 @@
+/* 
+CSS Module for the Score component:
+- Renders the score result of 100, score type and description with score percentage
+*/
+
+/*score main container: only the bottom borders are rounded*/
+.mainCont {
+  padding: 2rem 2rem 2.5rem 2rem;
+  border-bottom-left-radius: var(--border-radius-30);
+  border-bottom-right-radius: var(--border-radius-30);
+  background: linear-gradient(
+    0deg,
+    var(--light-royal-blue) 10%,
+    var(--light-slate-blue) 100%
+  );
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-20);
+  color: var(--light-lavender);
+}
+
+/*Circle with the score of 100*/
+.circle {
+  width: 10rem; /*160px*/
+  height: 10rem; /*160px*/
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    var(--persian-blue) 0%,
+    var(--violet-blue) 100%
+  );
+}
+
+.scoreValue {
+  font-size: var(--font-size-60);
+  color: var(--white);
+}
+
+.type {
+  display: block;
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: var(--font-size-25);
+  color: var(--white);
+}
+
+/*of 100 text: has 0.5 opacity*/
+.scoreText {
+  color: var(--muted-white);
+}
+
+.description {
+  display: inline-block;
+  color: var(--light-lavender);
+}
+
+/*Tablet Styles*/
+@media (min-width: 48rem /*768px*/) {
+  /*main title: increase the font size*/
+  .title {
+    font-size: var(--font-size-25);
+  }
+
+  /*score circle: increase the size*/
+  .circle {
+    width: 12.5rem; /*200px*/
+    height: 12.5rem; /*200px*/
+  }
+
+  /*score value: increase the font size*/
+  .scoreValue {
+    font-size: var(--font-size-75);
+  }
+
+  /*score text: increase the font size*/
+  .scoreText {
+    font-size: var(--font-size-18);
+  }
+
+  /*score type: increase top/bottom margin and font size*/
+  .type {
+    margin: 2rem 0 1rem 0;
+    font-size: var(--font-size-30);
+  }
+
+  /*score percentage description: set max width*/
+  .description {
+    max-width: 18.75rem; /*300px*/
+  }
+}
+
+/*Desktop Styles*/
+@media (min-width: 64rem /*1024px*/) {
+  /*score main container: increase the padding and make all the borders rounded*/
+  .mainCont {
+    padding: 3rem 4rem 3rem 4rem;
+    border-top-left-radius: var(--border-radius-30);
+    border-top-right-radius: var(--border-radius-30);
+  }
+
+  /*score circle: increase the size*/
+  .circle {
+    width: 14.375rem; /*230px*/
+    height: 14.375rem; /*230px*/
+  }
+
+  /*score type: increase the font size*/
+  .type {
+    font-size: var(--font-size-35);
+  }
+
+  /*score percentage description: decrease the max width*/
+  .description {
+    max-width: 15.625rem; /*250px*/
+  }
+}
+
+/*Large Desktop Styles*/
+@media (min-width: 90rem /*1440px*/) {
+  /*score main container: increase the padding*/
+  .mainCont {
+    padding: 3rem 6rem 3rem 6rem;
+    border-top-left-radius: var(--border-radius-30);
+    border-top-right-radius: var(--border-radius-30);
+  }
+}

@@ -1,0 +1,121 @@
+/*
+Global CSS styles
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*Font:*/
+  /*Family*/
+  --font-hanken-grotesk: "Hanken Grotesk", sans-serif;
+  /*Weight*/
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  /*Size*/
+  --font-size-base: 1rem;
+  --font-size-18: 1.125rem; /*18px*/
+  --font-size-20: 1.25rem; /*20px*/
+  --font-size-25: 1.5625rem; /*25px*/
+  --font-size-30: 1.875rem; /*30px*/
+  --font-size-35: 2.1875rem; /*35px*/
+  --font-size-60: 3.75rem; /*60px*/
+  --font-size-75: 4.6875rem; /*75px*/
+
+  /*Border*/
+  --border-radius-10: 10px;
+  --border-radius-16: 16px;
+  --border-radius-30: 30px;
+  --border-radius-500: 500px;
+
+  /*Colors:*/
+  /*Neutral*/
+  --white: hsl(0, 0%, 100%);
+  --muted-white: hsla(0, 0%, 100%, 0.5);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --pale-dark-gray-blue: hsl(224, 30%, 40%);
+
+  /*Primary*/
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobatl-blue: hsl(234, 85%, 45%);
+
+  --pale-light-red: hsl(0, 100%, 95%);
+  --pale-orange-yellow: hsl(39, 100%, 95%);
+  --pale-green-teal: hsl(166, 100%, 95%);
+  --pale-cobatl-blue: hsl(234, 85%, 95%);
+
+  /*Gradients*/
+  /*Background*/
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  /*Circle*/
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+html,
+body {
+  font-family: var(--font-hanken-grotesk);
+  -webkit-font-smoothing: antialiased; /*smooths the edges of fonts on Chrome, Safari, Edge*/
+  -moz-osx-font-smoothing: grayscale; /*smooths the edges of fonts Firefox on macOS*/
+}
+
+body {
+  background-color: var(--pale-blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: var(--font-size-18);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.lighter-text {
+  font-weight: var(--font-weight-400);
+}
+
+.light-text {
+  font-weight: var(--font-weight-500);
+}
+
+.bold-text {
+  font-weight: var(--font-weight-700);
+}
+
+/*Centered flex row container*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Centered flex column container*/
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Available only for screen readers*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}

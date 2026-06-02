@@ -1,0 +1,82 @@
+/* 
+CSS Module for the Summary component:
+- Renders the skills summary and continue link
+*/
+
+.mainCont {
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray-blue);
+  font-size: var(--font-size-20);
+}
+
+.skillItem {
+  margin-bottom: 1rem;
+}
+
+.link {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-radius: var(--border-radius-500);
+  background-color: var(--dark-gray-blue);
+}
+
+.linkText {
+  font-size: var(--font-size-18);
+  color: var(--white);
+}
+
+/*Tablet Styles*/
+@media (min-width: 48rem /*768px*/) {
+  /*summary main container: increase padding*/
+  .mainCont {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+
+  /*main title: increase the font size*/
+  .title {
+    font-size: var(--font-size-25);
+  }
+
+  /*skill: increase the bottom margin*/
+  .skillItem {
+    margin-bottom: 1.5rem;
+  }
+
+  /*continue link: increase top/bottom padding*/
+  .link {
+    padding: 1.2rem 0;
+  }
+
+  /*continue link: override focus style*/
+  .link:focus-visible {
+    outline: solid 3px var(--light-slate-blue);
+    outline-offset: 3px;
+  }
+
+  /*continue link: on hover, change the background color to gradient*/
+  .link:hover {
+    background: linear-gradient(
+      0deg,
+      var(--light-royal-blue) 0%,
+      var(--light-slate-blue) 100%
+    );
+  }
+}
+
+/*Desktop Styles*/
+@media (min-width: 64rem /*1024px*/) {
+  /*summary main container: decrease right padding and remove left padding, make top/bottom right borders rounded*/
+  .mainCont {
+    padding: 3rem 3rem 3rem 0;
+    background-color: var(--white);
+    border-bottom-right-radius: var(--border-radius-30);
+    border-top-right-radius: var(--border-radius-30);
+  }
+}
