@@ -64,7 +64,7 @@ Continue Button:
 
 #### **Unit Tests**
 
-This project uses Jest and React Testing Library for unit and integration testing.
+This project uses Jest and React Testing Library for unit testing.
 
 The unit tests cover:
 
@@ -95,7 +95,7 @@ The unit tests cover:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
